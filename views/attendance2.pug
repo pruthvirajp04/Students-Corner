@@ -1,0 +1,103 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='../static/attendance2style.css')
+  link(rel='icon' type='image/x-icon' href = "../static/somaiyalogo.png")
+  script(src='https://kit.fontawesome.com/7f0bfcb1a9.js' crossorigin='anonymous')
+  title Attendance-DS
+.navbar
+  ul.container
+    .logoimage
+      img(src='../static/somaiyalogo.png' alt='Logo')
+    // Navigation item
+    li.item_left
+      a(href='/stuinfo') Student
+    li.item_left
+      a.active(href='/getattendance' target='_self') Attendance
+    li.item_left
+      a.marks(href='' target='_self') Marks
+    // Navigation item that sticks to the right
+    li.container__item--right
+      .avatar
+        .dropdown
+          // The trigger element
+          button.btn
+            i.fas.fa-user-circle.fa-3x
+          // The content
+          .dropdown__content
+            button.logout(type='button' name='button')
+              i.fas.fa-sign-out-alt
+              |                 Logout
+        // Avatar image
+// second navigation bar
+.secondnav
+  a(href='/getattendance' target='_self')
+    button.dotbtn(type='button' name='button') AME
+  a#active(href='/attendance2' target='_self')
+    button.dotbtn(type='button' name='button') DS
+  a(href='/attendance3' target='_self')
+    button.dotbtn(type='button' name='button') CG
+  a(href='/attendance4' target='_self')
+    button.dotbtn(type='button' name='button') DSGT
+// body
+.maincontent
+  .month
+    // The trigger element
+    button.monthbtn January
+    // The content
+    .month__content
+      a(href='#') January
+      a(href='#') February
+      a(href='#') March
+      a(href='#') April
+      a(href='#') May
+  .naming
+    | Theory
+  .content1
+    h2
+      p Week 1 : 80% 
+      p Week 2 : 93% 
+      p Week 3 : 79% 
+      p Week 4 : 55% 
+    hr
+    h1 Total : 76.75%
+  .naming  Practical 
+  .content2
+    h2
+      p Week 1 : 80% 
+      p Week 2 : 93% 
+      p Week 3 : 79% 
+      p Week 4 : 55% 
+    hr
+    h1 Total : 76.75%
+footer
+  .mainfooter
+    .handandcopy
+      .handles
+        .insta
+          a(href='https://www.instagram.com/kjsieit_22/' target='_blank')
+            img(src='../static/instagramlogo.png' alt='Insta Logo')
+        .facebook
+          a(href='https://www.facebook.com/kjsieitofficial' target='_blank')
+            img(src='../static/facebook logo.png' alt='facebook Logo')
+        .linkedin
+          a(href='https://www.linkedin.com/in/kjsieit/' target='_blank')
+            img(src='../static/linkedinlogo.png' alt='Linked In Logo')
+        .youtube
+          a(href='https://www.youtube.com/kjsieitofficial' target='_blank')
+            img(src='../static/youtubelogo.png' alt='You Tube Logo')
+        .twitter
+          a(href='https://twitter.com/kjsieit1' target='_blank')
+            img(src='../static/twitter logo.png' alt='Twitter Logo')
+      .copyright
+        h2
+          strong
+            | Copyright &copy; www.kjsieitstudentscorner.com | All rights reserved.
+    .credits
+      h2
+        | Developed by 
+        a(href='https://www.linkedin.com/in/pruthviraj-patil-a76962210/' target='_blank') Pruthviraj Patil 
+        a(href='' target='_blank') Satyam Singh
+        a(href='' target='_blank') Prajyot Shende
