@@ -1,0 +1,20 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "To do the college mini proj",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15",
+    "pkg": "^5.4.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pruthvi",
+  "license": "ISC"
+}
