@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  /* background-color: #BCA0DC; */
+  background-color: #8ecae6;
+}
+
+.navbar li a.active {
+  color: white;
+}
+
+.navbar li a:hover {
+  opacity: 0.5;
+}
+.marks{
+  display: none;
+}
+.navbar {
+  /* display: flex; */
+  /* flex-direction: row; */
+  font-size: 25px;
+  background-color: #023047;
+  color: #ffb703;
+}
+
+/* .logoimage {
+  /* display: flex; */
+  /* background-color: ; */
+/* }  */
+
+.logoimage img {
+  width: 80px;
+  height: 82px;
+  border-radius: 15px;
+  margin: -9px 10px;
+  margin-top: 1px;
+}
+
+.container {
+  background-color: ;
+  /* Content is centered horizontally */
+  align-items: center;
+  display: flex;
+  /* Reset styles */
+  list-style-type: none;
+  margin: 0px;
+  height: 90px;
+}
+
+.container__item--right {
+  /* Sticks to the right */
+  margin-left: auto;
+}
+
+.avatar {
+  /* Rounded border */
+  border-radius: 50%;
+  width: 64px;
+  margin-top: 18px;
+  margin-bottom: 13px;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  /* background: url('./user.png')no-repeat center center/cover; */
+  background: transparent;
+  border: none;
+}
+
+.navbar li .btn:hover {
+  opacity: 0.5;
+}
+
+i {
+  filter: invert(100%);
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Hide the dropdown's content by default */
+.dropdown__content {
+  display: none;
+  /* Position it right below the trigger element */
+  left: -20px;
+  padding-top: 4px;
+  position: absolute;
+  top: 80%;
+  /* It should be on the top of other elements */
+  /* background-color: #fff; */
+  zindex: 9999;
+  /* Size */
+  height: 30px;
+  width: 80px;
+}
+
+.logout {
+  height: 100%;
+  width: 100%;
+}
+
+/* Show the content when hover on the container */
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.container li a {
+  list-style: none;
+  text-decoration: none;
+  color: #ffb703;
+}
+
+.item_left {
+  margin: 8px 32px;
+}
+
+/* second Navigation  */
+.secondnav {
+  display: flex;
+  flex-direction;
+  justify-content: center;
+}
+
+.secondnav a{
+  text-decoration: none;
+  margin: 0px 20px;
+}
+
+.dotbtn {
+  /* border-radius: 999px; */
+  background: transparent;
+  border: none;
+  height: 12px;
+  width: 30px;
+  /* border: 1px solid grey; */
+  margin: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#active {
+  color: #ffb703;
+}
+
+.naming {
+  margin: auto;
+  font-size: 38px;
+}
+
+.naming:hover {
+  font-size: 45px;
+  text-shadow: 2px 2px 6px grey;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px; */
+  margin: 0px auto;
+  margin-top: 50px;
+  background-color: #219ebc;
+  height: 1000px;
+  width: 700px;
+  border-radius: 20px;
+}
+
+/* month drop down */
+.month {
+  position: relative;
+  margin: auto;
+}
+
+.monthbtn{
+  width: 100px;
+  height: 30px;
+}
+
+/* Hide the month's content by default */
+.month__content {
+  display: none;
+  /* Position it right below the trigger element */
+  left: 0px;
+  paddingtop: 4px;
+  position: absolute;
+  top: 105%;
+  /* It should be on the top of other elements */
+  background-color: #fff;
+  zindex: 9999;
+  /* Size */
+  height: 125px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Show the content when hover on the container */
+.month:hover .month__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.month__content a{
+  text-decoration: none;
+}
+
+.content1 {
+  background-color: #ffb703;
+  margin: auto;
+  width: 493px;
+  height: 335px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.content1 p{
+  padding: 10px 0px;
+}
+
+.content1 h1{
+  padding-top:10px;
+}
+
+.content1:hover {
+  box-shadow: 2px 2px 8px black;
+}
+
+.content2 {
+  background-color: #ffb703;
+  margin: auto;
+  width: 493px;
+  height: 335px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.content2 p{
+  padding: 10px 0px;
+}
+
+.content2 h1{
+  padding-top:10px;
+}
+
+.content2:hover {
+  box-shadow: 2px 2px 8px black;
+}
+
+footer {
+  /* display: flex; */
+  background-color: #fb8500;
+  /* display: flex; */
+  /* background: url('./f1.jpg'); */
+  /* background-color: black; */
+  color: white;
+  height: 21%;
+  width: 1599px;
+  /* width: 650px/; */
+  margin-top: 300px;
+  /* margin-bottom: 0px; */
+  margin-left: -10px;
+  margin-right: -7px;
+}
+
+.handandcopy {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid honeydew; */
+  /* margin-top: 12px; */
+  padding: 12px 12px;
+  width: 1276px;
+  display: flex;
+  /* margin-left: 9px; */
+  margin: auto;
+}
+
+.handles {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  /* margin-left: -6px; */
+  height: 50px;
+  width: 350px;
+  margin-top: -8px;
+  font-size: 30px;
+  /* border: 2px solid red; */
+}
+
+.handles img {
+  margin: 0px 22px;
+}
+
+.copyright {
+  /* margin-left: 250px;
+  margin-top: -6px; */
+  margin: auto;
+  font-size: 14px;
+  height: 61px;
+  width: 683px;
+  /* color: blanchedalmond; */
+  /* border: 2px solid blue; */
+}
+
+.insta a img:hover {
+  opacity: 0.7;
+  width: 55px;
+  height: 55px;
+}
+
+.facebook a img:hover {
+  opacity: 0.7;
+  width: 44px;
+  height: 40px;
+}
+
+.linkedin a img:hover {
+  opacity: 0.7;
+  width: 37px;
+  height: 37px;
+}
+
+.youtube a img:hover {
+  opacity: 0.7;
+  width: 66px;
+  height: 40px;
+}
+
+.twitter a img:hover {
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+}
+
+.insta a img {
+  /* opacity: 0.7; */
+  margin-top: -8px;
+  width: 54px;
+  height: 54px;
+}
+
+.facebook a img {
+  width: 42px;
+  height: 38px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.linkedin a img {
+  /* opacity: 0.7; */
+  width: 32px;
+  height: 32px;
+}
+
+.youtube a img {
+  /* opacity: 0.7; */
+  width: 62px;
+  height: 38px;
+}
+
+.twitter a img {
+  /* opacity: 0.7; */
+  width: 45px;
+  height: 45px;
+}
+
+.mainfooter {
+  display: block;
+  /* border: 2px solid red; */
+}
+
+.credits {
+  height: 56px;
+  /* margin-top: -18px;
+  margin-left: 248px;
+  margin-right: 18px;
+  margin-bottom: 13px; */
+  /* border: 2px solid hotpink; */
+  padding: -1px 1px;
+  padding: 1px 1px;
+  margin: auto;
+  text-align: center;
+}
+
+.credits a:hover {
+  color: brown;
+  font-size: 25px;
+}
