@@ -1,0 +1,74 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login Page
+  link(rel='stylesheet' href='../static/loginstyle56.css')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap' rel='stylesheet')
+  link(rel='icon' type='image/x-icon' href = "../static/somaiyalogo.png")
+  script(src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous')
+  // <script src="../login.js"></script>
+.navbar
+  .logoimage
+    img(src='../static/somaiyalogo.png' alt='Logo')
+  ul
+    li
+      a(href='/index' target='_self') Home
+    li
+      a.active(href='/login') Login
+    // <li><a href= "#">About Institute</a></li>
+    li
+      a(href='/contact' target='_self')  Contact Us 
+.MainContent
+  .heading
+    .head
+      h1
+        | Student&apos;s Login
+//
+  <div class="login-head">
+  <h2>Student's Login</h2>
+  </div>
+.login-box
+  form(action='/getattendance' ,='' method='POST')
+    .box
+      strong(style='font-size: 28px; color: white;') Email
+      input#email(type='email' name='email' placeholder='Enter your Email')
+    .box
+      strong(style='font-size: 28px; color: white;') Password
+      input#password(type='password' name='password' required='' placeholder='Enter your Password')
+    .final-box
+      .submit-btn
+        input(type='submit' value='Submit')
+      .reset-btn
+        input(type='reset' value='Reset')
+footer
+  .mainfooter
+    .handandcopy
+      .handles
+        .insta
+          a(href='https://www.instagram.com/kjsieit_22/' target='_blank')
+            img(src='../static/instagramlogo.png' alt='Insta Logo')
+        .facebook
+          a(href='https://www.facebook.com/kjsieitofficial' target='_blank')
+            img(src='../static/facebook logo.png' alt='facebook Logo')
+        .linkedin
+          a(href='https://www.linkedin.com/in/kjsieit/' target='_blank')
+            img(src='../static/linkedinlogo.png' alt='Linked In Logo')
+        .youtube
+          a(href='https://www.youtube.com/kjsieitofficial' target='_blank')
+            img(src='../static/youtubelogo.png' alt='You Tube Logo')
+        .twitter
+          a(href='https://twitter.com/kjsieit1' target='_blank')
+            img(src='../static/twitter logo.png' alt='Twitter Logo')
+      .copyright
+        h2
+          strong
+            | Copyright &copy; www.kjsieitstudentscorner.com | All rights reserved.
+    .credits
+      h2
+        | Developed by 
+        a(href='https://www.linkedin.com/in/pruthviraj-patil-a76962210/' target='_blank') Pruthviraj Patil 
+        a(href='' target='_blank') Satyam Singh
+        a(href='' target='_blank') Prajyot Shende
