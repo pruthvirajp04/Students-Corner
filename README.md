@@ -2,7 +2,7 @@
 # Developed Using PUG, CSS, Node JS and Node Package Manager.
 A simple website to display the attendace of KJ somaiya Engineering student
 Steps: -->
- Open terminal go to the file of this Project'.
+ 1.Open terminal go to the file of this Project'.
  Run command 'node server.js'.
 Copy tlink from the terminal and go to the website.
  Go to login
